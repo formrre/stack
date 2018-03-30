@@ -15,7 +15,7 @@ homepage: http://haskellstack.org
 custom-setup:
   dependencies:
   - base
-  - Cabal == 2.*
+  - Cabal
   - filepath
 extra-source-files:
 - CONTRIBUTING.md
@@ -34,7 +34,7 @@ ghc-options:
 - -fwarn-incomplete-uni-patterns
 - -fwarn-incomplete-record-updates
 dependencies:
-- Cabal == 2.2.*
+- Cabal
 - aeson
 - annotated-wl-pprint
 - ansi-terminal

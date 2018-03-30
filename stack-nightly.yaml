@@ -1,4 +1,4 @@
-resolver: nightly-2018-03-10
+resolver: nightly-2018-03-12
 packages:
 - .
 - subs/rio
@@ -10,18 +10,7 @@ nix:
     - zlib
     - http-client-tls-0.3.4
 extra-deps:
-# https://github.com/commercialhaskell/stack/issues/3785
-- ansi-terminal-0.8.0.2@rev:0
-- archive: https://github.com/haskell/hackage-security/archive/3297b0f3f4285cb30321baaa7b54e3d22e1f6bd7.tar.gz
-  subdirs:
-  - hackage-security
-- happy-1.19.9@rev:2 # Otherwise not included in the build plan, unsure why
-- http-api-data-0.3.8@rev:0
-
-# https://github.com/haskell/cabal/issues/5206
-- archive: https://github.com/snoyberg/cabal/archive/ac6be1854df8413014b9b71f4fc57634db092051.tar.gz
-  subdirs:
-  - Cabal
-
-# Workaround for https://github.com/commercialhaskell/stack/issues/3922
-- haskell-src-exts-1.20.2@rev:0
+- Cabal-2.2.0.1@rev:0
+- hackage-security-0.5.3.0@rev:0
+- hpack-0.28.2
+- http-api-data-0.3.8.1@rev:0
